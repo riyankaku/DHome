@@ -1,111 +1,95 @@
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 15,
-    nav: false,
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplaySpeed: 2000,
-    autoplayHoverPause: true,
-    smartSpeed: 1000,
-    fluidSpeed: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      576: {
-        items: 1.5,
-      },
-      768: {
-        items: 2,
-      },
-      992: {
-        items: 2.5,
-      },
-      1200: {
-        items: 2.2,
-      },
-    },
-  });
+    new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
 
-  // For continuous smooth scrolling effect (optional)
-  setInterval(function () {
-    $(".owl-carousel").trigger("next.owl.carousel", [800]);
-  }, 3000);
+
+        speed: 300,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            576: {slidesPerView: 1},
+            768: {slidesPerView: 2},
+            992: {slidesPerView: 3},
+        },
+    });
+
+    $("#clientCarousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        responsive: {
+            0: {items: 2},
+            576: {items: 3},
+            768: {items: 4},
+            992: {items: 6},
+        },
+    });
+
+
+    const sliderSection = document.querySelector('.slider-container');
+    const sliderItems = document.querySelectorAll('.slider-container .item');
+    const totalItems = sliderItems.length;
+
+    gsap.set(sliderItems, {
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        opacity: 1,
+        x: "50%"
+    });
+
+    gsap.set(sliderItems[0], {
+        opacity: 1,
+        x: 0
+    });
+
+    ScrollTrigger.create({
+        trigger: ".slider-container",
+        start: "top center",
+        end: "+=" + (totalItems * 100) + "%",
+        scrub: 0.5,
+        markers: false,
+        pin: true,
+        onUpdate: function (self) {
+            const progress = self.progress;
+
+            const currentImageIndex = Math.min(Math.floor(progress * totalItems), totalItems - 1);
+
+            const fractionalProgress = (progress * totalItems) - currentImageIndex;
+
+            sliderItems.forEach((item, index) => {
+                if (index === currentImageIndex) {
+                    gsap.to(item, {
+                        opacity: 1,
+                        x: -fractionalProgress * 50 + "%",
+                        duration: 0.1,
+                        overwrite: "auto"
+                    });
+                } else if (index === currentImageIndex + 1) {
+                    gsap.to(item, {
+                        opacity: 1,
+                        x: (1 - fractionalProgress) * 50 + "%",
+                        duration: 0.1,
+                        overwrite: "auto"
+                    });
+                } else if (index < currentImageIndex) {
+                    gsap.set(item, {
+                        opacity: 1,
+                        x: "-100%"
+                    });
+                } else {
+                    gsap.set(item, {
+                        opacity: 1,
+                        x: "100%"
+                    });
+                }
+            });
+        }
+    });
+
 });
-
-
- const swiper = new Swiper(".mySwiper", {
-   slidesPerView: 1,
-   spaceBetween: 20,
-   loop: true,
-//    autoplay:{
-//      delay: 2000,
-//      disableOnInteraction: false,
-//    },
-   
-   speed: 300,
-   navigation: {
-     nextEl: ".swiper-button-next",
-     prevEl: ".swiper-button-prev",
-   },
-   breakpoints: {
-     576: { slidesPerView: 1 },
-     768: { slidesPerView: 2 },
-     992: { slidesPerView: 3},
-   },
- });
-
- $("#clientCarousel").owlCarousel({
-   loop: true,
-   margin: 30,
-   nav: false,
-//    autoplay: true,
-//    autoplayTimeout: 2000,
-   responsive: {
-     0: { items: 2 },
-     576: { items: 3 },
-     768: { items: 4 },
-     992: { items: 6 },
-   },
- });
- const testimonialContainer = document.querySelector('.testimonial-container');
-    const testimonials = document.querySelectorAll('.testimonial');
-    const prevButton = document.getElementById('prev-testimonial');
-    const nextButton = document.getElementById('next-testimonial');
-
-    let currentIndex = 0;
-    const totalTestimonials = testimonials.length;
-
-   
-    function updateSlider() {
-      
-      const offset = -currentIndex * 100;
-      testimonialContainer.style.transform = `translateX(${offset}%)`;
-
-     
-      prevButton.disabled = currentIndex === 0;
-      nextButton.disabled = currentIndex === totalTestimonials - 1;
-    }
-
-
-    nextButton.addEventListener('click', () => {
-      if (currentIndex < totalTestimonials - 1) {
-        currentIndex++;
-        updateSlider();
-      }
-     
-    });
-
-    prevButton.addEventListener('click', () => {
-      if (currentIndex > 0) {
-        currentIndex--;
-        updateSlider();
-      }
-     
-    });
-
-    
-    updateSlider(); 
-
