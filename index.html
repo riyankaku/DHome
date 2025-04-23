@@ -438,220 +438,413 @@
       </div>
     </div>
     <!-- ready to transform section -->
-     <div class="position-relative transform-section">
-  <div class="container position-relative z-1 ">
-    <div class="transform-content">
-         <div class="transform-content  p-5 rounded" style="background-image: url('/images/transform-bg.png'); background-size: cover; background-position: center; height: 500px;">
-      <h2 class="fw-bold display-5 mb-3">Ready to Transform Your Space?</h2>
-      <p class="text-dark mb-4">
-        Let’s bring your vision to life—beautifully, functionally, and uniquely you. Whether it’s a single room or a full home makeover, our team is here to make it happen.
-      </p>
-      <a href="#" class="btn btn-outline-dark px-4 py-2">Get A Quote Today</a>
-    </div>
-    </div>
-   
-  </div>
-
-  <!-- Left Decorative Image -->
-  <img src="./images/transform_left.png" alt="Decor Left" class="img-fluid decor-left" style="width: 140px; border-radius: 8px;">
-
-  <!-- Right Decorative Image -->
-  <img src="./images/transform_right.png" alt="Decor Right" class="img-fluid decor-right"style="width: 140px; border-radius: 8px;">
-</div>
-<!-- testimonial section -->
-    <div class="testimonial-section container">
-    <div class="testimonial-layout"> <!-- New Flex Container -->
-
-      <div class="testimonial-header"> <!-- Fixed Left Part -->
-        <h2>What Our Clients Say</h2>
-        <p>Genuine feedback from homeowners whose spaces we've transformed with care, creativity, and a commitment to quality interior design solutions.</p>
-        <a href="#">View all →</a>
-      </div>
-
-      <div class="testimonial-slider"> <!-- Sliding Right Part -->
-        <div class="testimonial-container"> <!-- Holds all items, moves horizontally -->
-          <div class="testimonial">
-            <div class="stars">★★★★★</div>
-            <p class="quote">D Home Improvement completely exceeded our expectations. The design, attention to detail, and execution were flawless. Our home finally feels like us.</p>
-            <p class="author">– Maison Élan</p>
-          </div>
-          <div class="testimonial">
-            <div class="stars">★★★★★</div>
-            <p class="quote">From the first consultation to the final reveal, the entire team was professional, creative, and incredibly responsive. Highly recommend!</p>
-            <p class="author">– BeauCiel Interiors</p>
-          </div>
-          <div class="testimonial"> <!-- Added third testimonial -->
-            <div class="stars">★★★★☆</div>
-            <p class="quote">A fantastic experience overall. They understood our vision and brought it to life beautifully, staying within budget.</p>
-            <p class="author">– Urban Nest Designs</p>
-          </div>
-           <div class="testimonial"> <!-- Added fourth testimonial -->
-            <div class="stars">★★★★★</div>
-            <p class="quote">Truly transformed our living room. The process was smooth, and the results speak for themselves. Wonderful team!</p>
-            <p class="author">– Serene Spaces Co.</p>
+    <div class="position-relative transform-section">
+      <div class="container position-relative z-1">
+        <div class="transform-content">
+          <div
+            class="transform-content p-5 rounded"
+            style="
+              background-image: url('./images/transform-bg.png');
+              background-size: cover;
+              background-position: center;
+              height: 500px;
+            "
+          >
+            <h2 class="fw-bold display-5 mb-3">
+              Ready to Transform Your Space?
+            </h2>
+            <p class="text-dark mb-4">
+              Let’s bring your vision to life—beautifully, functionally, and
+              uniquely you. Whether it’s a single room or a full home makeover,
+              our team is here to make it happen.
+            </p>
+            <a href="#" class="btn btn-outline-dark px-4 py-2"
+              >Get A Quote Today</a
+            >
           </div>
         </div>
-        <!-- Navigation Arrows -->
-        <button id="prev-testimonial" aria-label="Previous Testimonial">❮</button>
-        <button id="next-testimonial" aria-label="Next Testimonial">❯</button>
       </div>
 
-    </div> <!-- End Testimonial Layout -->
-  </div>
+      <!-- Left Decorative Image -->
+      <img
+        src="./images/transform_left.png"
+        alt="Decor Left"
+        class="img-fluid decor-left"
+        style="width: 140px; border-radius: 8px"
+      />
 
-     <!-- contact part -->
-      <div class="contact-section py-5">
-  <div class="container">
-    <div class="row align-items-center rounded-4 overflow-hidden" style="background-image: url('/images/contact_bg.png'); background-size: cover; background-position: center;">
-      
-      <!-- Left Text Column -->
-      <div class="col-md-6 text-white p-5">
-        <h2 class="display-5 fw-bold">Let’s Design Your<br>Dream Space<br>Together</h2>
-        <p class="mt-3 fs-5">Speak with our design experts to explore ideas, get personalized solutions,<br>and start your journey toward a beautifully transformed home.</p>
-      </div>
+      <!-- Right Decorative Image -->
+      <img
+        src="./images/transform_right.png"
+        alt="Decor Right"
+        class="img-fluid decor-right"
+        style="width: 140px; border-radius: 8px"
+      />
+    </div>
+    <!-- testimonial section -->
 
-      <!-- Right Form Column -->
-      <div class="col-md-6 p-5">
-        <div class="bg-light p-4 rounded-3 shadow-lg" style="max-width: 400px; margin: auto;">
-          <form>
-            <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Full Name">
+    <div class="testimonial-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-4">
+            <h2 class="testimonial-heading">What Our Clients Say</h2>
+            <p>
+              Genuine feedback from homeowners whose spaces were transformed
+              with care, creativity, and a commitment to quality interior design
+              solutions.
+            </p>
+            <a href="#" class="btn btn-outline-dark mt-3"
+              >View all <i class="bi bi-arrow-right"></i
+            ></a>
+          </div>
+
+          <div class="col-md-8">
+            <div
+              id="testimonialCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <!-- First Slide -->
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>
+                          D Home Improvement completely exceeded our
+                          expectations. The design, attention to detail, and
+                          execution were flawless. Our home truly feels like us.
+                        </p>
+                        <p class="client-name">- Madison Flyn</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>
+                          From the first consultation to the final reveal, the
+                          entire team was professional, creative, and incredibly
+                          responsive. Highly recommend!
+                        </p>
+                        <p class="client-name">- BeauCal Interiors</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Second Slide -->
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>
+                          We couldn't be happier with our new kitchen design.
+                          The team listened to our needs and created a space
+                          that's both functional and beautiful.
+                        </p>
+                        <p class="client-name">- Thomas Greene</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p>
+                          Their attention to detail is unmatched. Every aspect
+                          of our living room renovation was handled with care
+                          and precision.
+                        </p>
+                        <p class="client-name">- Sarah Johnson</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controls -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Email">
-            </div>
-            <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Phone">
-            </div>
-            <div class="mb-3">
-              <textarea class="form-control" rows="4" placeholder="Description"></textarea>
-            </div>
-            <button type="submit" class="btn btn-outline-dark w-100">Submit</button>
-          </form>
+          </div>
         </div>
       </div>
-
     </div>
-  </div>
-</div>
-<!-- clients part -->
- <div class="clientPart py-5 text-center" style="background-color: #fefdf2;">
-  <div class="container">
-    <p class="text-muted mb-1">Trusted by Over 100+ </p>
-    <h2 class="fw-bold mb-4">Satisfied Clients</h2>
 
-    <!-- Owl Carousel -->
-    <div id="clientCarousel" class="owl-carousel owl-theme">
-      <div class="item">
-        <img src="./images/c1.png" alt="Client 1" class="img-fluid">
-      </div>
-      <div class="item">
-        <img src="./images/c2.png" alt="Client 2" class="img-fluid ">
-      </div>
-      <div class="item">
-        <img src="./images/c3.png" alt="Client 3" class="img-fluid">
-      </div>
-      <div class="item">
-        <img src="./images/c4.png" alt="Client 4" class="img-fluid">
-      </div>
-      <div class="item">
-        <img src="./images/c5.png" alt="Client 5" class="img-fluid">
-      </div>
-      <div class="item">
-        <img src="./images/c6.png" alt="Client 6" class="img-fluid">
-      </div>
-    </div>
-  </div>
-</div>
-<!-- footer -->
- <footer class="bg-light-subtle text-dark pt-5 pb-3" style="background-color: #fef1e4;">
-  <div class="container">
-    <div class="row gy-4">
-      <!-- Logo & Subscription -->
-      <div class="col-md-3">
-        <img src="./images/logo.png" alt="Logo">
-        <p class="fw-semibold mt-2 mb-1">Stay Tuned For Updates</p>
-        <div class="input-group">
-          <input type="email" class="form-control" placeholder="Email">
-          <button class="btn btn-dark" type="button">
-            <i class="bi bi-arrow-right"></i>
-          </button>
+    <!-- contact part -->
+    <div class="contact-section py-5">
+      <div class="container">
+        <div
+          class="row align-items-center rounded-4 overflow-hidden"
+          style="
+            background-image: url('/images/contact_bg.png');
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <!-- Left Text Column -->
+          <div class="col-md-6 text-white p-5">
+            <h2 class="display-5 fw-bold">
+              Let’s Design Your<br />Dream Space<br />Together
+            </h2>
+            <p class="mt-3 fs-5">
+              Speak with our design experts to explore ideas, get personalized
+              solutions,<br />and start your journey toward a beautifully
+              transformed home.
+            </p>
+          </div>
+
+          <!-- Right Form Column -->
+          <div class="col-md-6 p-5">
+            <div
+              class="bg-light p-4 rounded-3 shadow-lg"
+              style="max-width: 400px; margin: auto"
+            >
+              <form>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Full Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Phone" />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Description"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-dark w-100">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+    <!-- clients part -->
+    <div class="clientPart py-5 text-center" style="background-color: #fefdf2">
+      <div class="container">
+        <p class="text-muted mb-1">Trusted by Over 100+</p>
+        <h2 class="fw-bold mb-4">Satisfied Clients</h2>
 
-      <!-- Contact Info -->
-      <div class="col-md-3">
-        <p class="mb-1 fw-semibold">Phone</p>
-        <p class="mb-2 small">+01 985 456 3200</p>
-
-        <p class="mb-1 fw-semibold">Email</p>
-        <p class="mb-2 small">info@homeimprovement.com</p>
-
-        <p class="mb-1 fw-semibold">Address</p>
-        <p class="small">calle 65 de infanteria #102<br>san juan, puerto rico 00924</p>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="col-md-2">
-        <p class="fw-semibold mb-2">Quick Links</p>
-        <ul class="list-unstyled small">
-          <li><a href="#" class="text-dark text-decoration-none">Home</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">About us</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Projects</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Contact</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Blog</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Faq</a></li>
-        </ul>
-      </div>
-
-      <!-- Residential Services -->
-      <div class="col-md-2">
-        <p class="fw-semibold mb-2">Residential Services</p>
-        <ul class="list-unstyled small">
-          <li><a href="#" class="text-dark text-decoration-none">Home Interiors</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Modular Kitchens</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Bedroom Design</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Living Spaces</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Dining Areas</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">False Ceilings</a></li>
-        </ul>
-      </div>
-
-      <!-- Commercial Services -->
-      <div class="col-md-2">
-        <p class="fw-semibold mb-2">Commercial Services</p>
-        <ul class="list-unstyled small">
-          <li><a href="#" class="text-dark text-decoration-none">Office Interiors</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Retail Design</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Restaurant Interiors</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Café Design</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Salon Design</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">Showroom Planning</a></li>
-        </ul>
+        <!-- Owl Carousel -->
+        <div id="clientCarousel" class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="./images/c1.png" alt="Client 1" class="img-fluid" />
+          </div>
+          <div class="item">
+            <img src="./images/c2.png" alt="Client 2" class="img-fluid" />
+          </div>
+          <div class="item">
+            <img src="./images/c3.png" alt="Client 3" class="img-fluid" />
+          </div>
+          <div class="item">
+            <img src="./images/c4.png" alt="Client 4" class="img-fluid" />
+          </div>
+          <div class="item">
+            <img src="./images/c5.png" alt="Client 5" class="img-fluid" />
+          </div>
+          <div class="item">
+            <img src="./images/c6.png" alt="Client 6" class="img-fluid" />
+          </div>
+        </div>
       </div>
     </div>
+    <!-- footer -->
+    <footer
+      class="bg-light-subtle text-dark pt-5 pb-3"
+      style="background-color: #fef1e4"
+    >
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Logo & Subscription -->
+          <div class="col-md-3">
+            <img src="./images/logo.png" alt="Logo" />
+            <p class="fw-semibold mt-2 mb-1">Stay Tuned For Updates</p>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Email" />
+              <button class="btn btn-dark" type="button">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
 
-    <!-- Footer bottom -->
-    <hr class="my-4">
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small">
-      <div class="text-muted mb-2 mb-md-0">
-        <a href="#" class="text-decoration-none text-dark me-3">Terms & Conditions</a>
-        <a href="#" class="text-decoration-none text-dark">Privacy Policy</a>
-      </div>
-      <div>
-        <a href="#" class="text-dark me-3"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="text-dark me-3"><i class="bi bi-youtube"></i></a>
-        <a href="#" class="text-dark me-3"><i class="bi bi-x"></i></a>
-        <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
-      </div>
-      <div class="text-muted mt-2 mt-md-0">
-        &copy; 2025 homeimprovement. All rights reserved
-      </div>
-    </div>
-  </div>
-</footer>
+          <!-- Contact Info -->
+          <div class="col-md-3">
+            <p class="mb-1 fw-semibold">Phone</p>
+            <p class="mb-2 small">+01 985 456 3200</p>
 
+            <p class="mb-1 fw-semibold">Email</p>
+            <p class="mb-2 small">info@homeimprovement.com</p>
 
+            <p class="mb-1 fw-semibold">Address</p>
+            <p class="small">
+              calle 65 de infanteria #102<br />san juan, puerto rico 00924
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-2">
+            <p class="fw-semibold mb-2">Quick Links</p>
+            <ul class="list-unstyled small">
+              <li>
+                <a href="#" class="text-dark text-decoration-none">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none">About us</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none">Projects</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none">Faq</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Residential Services -->
+          <div class="col-md-2">
+            <p class="fw-semibold mb-2">Residential Services</p>
+            <ul class="list-unstyled small">
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >Home Interiors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >Modular Kitchens</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >Bedroom Design</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >Living Spaces</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >Dining Areas</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >False Ceilings</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Commercial Services -->
+          <div class="col-md-2">
+            <p class="fw-semibold mb-2">Commercial Services</p>
+            <ul class="list-unstyled small">
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >Office Interiors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >Retail Design</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >Restaurant Interiors</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >Café Design</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >Salon Design</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-dark text-decoration-none"
+                  >Showroom Planning</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer bottom -->
+        <hr class="my-4" />
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between align-items-center small"
+        >
+          <div class="text-muted mb-2 mb-md-0">
+            <a href="#" class="text-decoration-none text-dark me-3"
+              >Terms & Conditions</a
+            >
+            <a href="#" class="text-decoration-none text-dark"
+              >Privacy Policy</a
+            >
+          </div>
+          <div>
+            <a href="#" class="text-dark me-3"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" class="text-dark me-3"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="text-dark me-3"><i class="bi bi-x"></i></a>
+            <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+          </div>
+          <div class="text-muted mt-2 mt-md-0">
+            &copy; 2025 homeimprovement. All rights reserved
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
