@@ -457,50 +457,116 @@
          style="width: 140px; border-radius: 8px;">
 </div>
 <!-- testimonial section -->
-<div class="testimonial-section container">
-    <div class="testimonial-layout"> <!-- New Flex Container -->
+<div class="testimonial-section">
+    <div class="container">
+        <div class="row mb-5 justify-content-center">
+            <div class="col-md-4">
+                <h2 class="testimonial-heading">What Our Clients Say</h2>
+                <p>
+                    Genuine feedback from homeowners whose spaces were transformed
+                    with care, creativity, and a commitment to quality interior design
+                    solutions.
+                </p>
+                <a class="btn btn-outline-dark mt-3" href="#"
+                >View all <i class="bi bi-arrow-right"></i
+                ></a>
+            </div>
 
-        <div class="testimonial-header"> <!-- Fixed Left Part -->
-            <h2>What Our Clients Say</h2>
-            <p>Genuine feedback from homeowners whose spaces we've transformed with care, creativity, and a commitment
-                to quality interior design solutions.</p>
-            <a href="#">View all →</a>
-        </div>
+            <div class="col-md-8">
+                <div
+                        class="carousel slide"
+                        data-bs-ride="carousel"
+                        id="testimonialCarousel"
+                >
+                    <div class="carousel-inner">
+                        <!-- First Slide -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="testimonial-card">
+                                        <div class="stars">★★★★★</div>
+                                        <p>
+                                            D Home Improvement completely exceeded our
+                                            expectations. The design, attention to detail, and
+                                            execution were flawless. Our home truly feels like us.
+                                        </p>
+                                        <p class="client-name">- Madison Flyn</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="testimonial-card">
+                                        <div class="stars">★★★★★</div>
+                                        <p>
+                                            From the first consultation to the final reveal, the
+                                            entire team was professional, creative, and incredibly
+                                            responsive. Highly recommend!
+                                        </p>
+                                        <p class="client-name">- BeauCal Interiors</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class="testimonial-slider"> <!-- Sliding Right Part -->
-            <div class="testimonial-container"> <!-- Holds all items, moves horizontally -->
-                <div class="testimonial">
-                    <div class="stars">★★★★★</div>
-                    <p class="quote">D Home Improvement completely exceeded our expectations. The design, attention to
-                        detail, and execution were flawless. Our home finally feels like us.</p>
-                    <p class="author">– Maison Élan</p>
-                </div>
-                <div class="testimonial">
-                    <div class="stars">★★★★★</div>
-                    <p class="quote">From the first consultation to the final reveal, the entire team was professional,
-                        creative, and incredibly responsive. Highly recommend!</p>
-                    <p class="author">– BeauCiel Interiors</p>
-                </div>
-                <div class="testimonial"> <!-- Added third testimonial -->
-                    <div class="stars">★★★★☆</div>
-                    <p class="quote">A fantastic experience overall. They understood our vision and brought it to life
-                        beautifully, staying within budget.</p>
-                    <p class="author">– Urban Nest Designs</p>
-                </div>
-                <div class="testimonial"> <!-- Added fourth testimonial -->
-                    <div class="stars">★★★★★</div>
-                    <p class="quote">Truly transformed our living room. The process was smooth, and the results speak
-                        for themselves. Wonderful team!</p>
-                    <p class="author">– Serene Spaces Co.</p>
+                        <!-- Second Slide -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="testimonial-card">
+                                        <div class="stars">★★★★★</div>
+                                        <p>
+                                            We couldn't be happier with our new kitchen design.
+                                            The team listened to our needs and created a space
+                                            that's both functional and beautiful.
+                                        </p>
+                                        <p class="client-name">- Thomas Greene</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="testimonial-card">
+                                        <div class="stars">★★★★★</div>
+                                        <p>
+                                            Their attention to detail is unmatched. Every aspect
+                                            of our living room renovation was handled with care
+                                            and precision.
+                                        </p>
+                                        <p class="client-name">- Sarah Johnson</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <button
+                            class="carousel-control-prev"
+                            data-bs-slide="prev"
+                            data-bs-target="#testimonialCarousel"
+                            type="button"
+                    >
+                <span
+                        aria-hidden="true"
+                        class="carousel-control-prev-icon"
+                ></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                            class="carousel-control-next"
+                            data-bs-slide="next"
+                            data-bs-target="#testimonialCarousel"
+                            type="button"
+                    >
+                <span
+                        aria-hidden="true"
+                        class="carousel-control-next-icon"
+                ></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-            <!-- Navigation Arrows -->
-            <button aria-label="Previous Testimonial" id="prev-testimonial">❮</button>
-            <button aria-label="Next Testimonial" id="next-testimonial">❯</button>
         </div>
-
-    </div> <!-- End Testimonial Layout -->
+    </div>
 </div>
+
 
 <!-- contact part -->
 <div class="contact-section py-5">
