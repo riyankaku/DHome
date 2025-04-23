@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DHome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Owl Carousel CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css
+"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg"
+      data-aos="fade-down"
+      data-aos-duration="3000"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" alt="DY Home Improvement" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Our Services <i class="fas fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" href="#">Service 1</a></li>
+                <li><a class="dropdown-item" href="#">Service 2</a></li>
+                <li><a class="dropdown-item" href="#">Service 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Faq</a>
+            </li>
+          </ul>
+          <div
+            class="search-icon language-selector"
+            data-bs-toggle="modal"
+            data-bs-target="#searchModal"
+          >
+            <a href="#" class="text-dark">
+              <i class="bi bi-search"></i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- <div class="dropdown" id="language_Dropdown">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            id="languageDropdown"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            EN
+          </button>
+          <ul
+            class="dropdown-menu language-dropdown"
+            aria-labelledby="languageDropdown"
+          >
+            <li><a class="dropdown-item" href="#">EN</a></li>
+            <li><a class="dropdown-item" href="#">ES</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </nav>
+    <!-- search modal -->
+    <div
+      class="modal fade"
+      id="searchModal"
+      tabindex="-1"
+      aria-labelledby="searchModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close-search"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-x-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+              />
+            </svg>
+          </button>
+          <div class="search-form-container">
+            <h2 class="mb-4">What are you looking for?</h2>
+            <form class="w-100">
+              <input
+                type="text"
+                class="form-control search-input"
+                placeholder="Type your search here..."
+              />
+              <div class="text-center">
+                <button type="submit" class="btn btn-dark search-btn">
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hero secttion -->
+    <div class="hero-section" data-aos="fade-up" data-aos-duration="3000">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h1 class="hero-title">
+              Transform <br />
+              Your Space with Style
+            </h1>
+          </div>
+          <div class="col-md-7">
+            <p class="hero-description">
+              Discover elegant & timeless home décor pieces that bring beauty,
+              comfort, and personality to every room. From modern minimalism to
+              classic charm—find your perfect match today!
+            </p>
+            <button class="btn quote-btn">Get A Quote</button>
+          </div>
+          <div class="floating-icon">
+            <i class="fas fa-couch"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- slider part -->
+    <div class="slider-container">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img
+            src="./images/slideimg1.png"
+            alt="Interior design with green chair"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./images/sliderimg2.png"
+            alt="Interior with monstera plant"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./images/slideimg3.png"
+            alt="Wooden furniture with plants"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./images/slideimg3.png"
+            alt="Wooden furniture with plants"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- about part -->
+
+    <div class="about-section">
+      <div class="container about-content">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h2 class="about-heading">About D Home Improvement</h2>
+            <p class="about-text">
+              At D Home Improvement, we believe that your home should be a
+              perfect blend of style, comfort, and functionality. Whether you're
+              refreshing a single room or transforming your entire space, our
+              expertly curated home décor solutions bring elegance and charm to
+              every corner. From modern minimalism to timeless classics, we
+              offer high-quality decor that enhances your lifestyle. Our mission
+              is to make home improvement effortless, inspiring, and uniquely
+              yours. Upgrade your space with D Home Improvement—where design
+              meets purpose.
+            </p>
+            <div class="text-center">
+              <a href="#" class="btn btn-know-more">Know More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- service part -->
+    <div class="py-3 service-detail">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <h2 class="fw-bold display-5">Our Services</h2>
+            <p class="text-muted mt-2">
+              We create beautiful, functional spaces that reflect your
+              lifestyle, combining smart design, comfort, and style.
+            </p>
+          </div>
+          <a href="#" class="text-decoration-none fw-semibold">
+            View all <i class="fa-solid fa-arrow-right ms-1"></i>
+          </a>
+        </div>
+
+        <!-- Swiper Slider -->
+        <div class="swiper mySwiper position-relative">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="card border-0 shadow-sm rounded-4">
+                <img
+                  src="./images/service1.png"
+                  class="card-img-top rounded-top-4"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Custom Painting & Wall Finishes</h5>
+                  <p class="card-text text-muted small">
+                    Textured finishes, accent colors, and modern polished cement
+                    wall effects.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-outline-dark btn-sm rounded-circle"
+                  >
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="card border-0 shadow-sm rounded-4">
+                <img
+                  src="./images/service2.png"
+                  class="card-img-top rounded-top-4"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Vinyl & Laminate Flooring</h5>
+                  <p class="card-text text-muted small">
+                    Stylish, durable floors that mimic wood, stone, or tile
+                    textures.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-outline-dark btn-sm rounded-circle"
+                  >
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="card border-0 shadow-sm rounded-4">
+                <img
+                  src="./images/service3.png"
+                  class="card-img-top rounded-top-4"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Custom Carpentry & Woodwork</h5>
+                  <p class="card-text text-muted small">
+                    Custom wardrobes, kitchens, and furniture designed with
+                    precision and style.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-outline-dark btn-sm rounded-circle"
+                  >
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0 shadow-sm rounded-4">
+                <img
+                  src="./images/service3.png"
+                  class="card-img-top rounded-top-4"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Custom Carpentry & Woodwork</h5>
+                  <p class="card-text text-muted small">
+                    Custom wardrobes, kitchens, and furniture designed with
+                    precision and style.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-outline-dark btn-sm rounded-circle"
+                  >
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0 shadow-sm rounded-4">
+                <img
+                  src="./images/service3.png"
+                  class="card-img-top rounded-top-4"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Custom Carpentry & Woodwork</h5>
+                  <p class="card-text text-muted small">
+                    Custom wardrobes, kitchens, and furniture designed with
+                    precision and style.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-outline-dark btn-sm rounded-circle"
+                  >
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card border-0 shadow-sm rounded-4">
+                <img
+                  src="./images/service3.png"
+                  class="card-img-top rounded-top-4"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Custom Carpentry & Woodwork</h5>
+                  <p class="card-text text-muted small">
+                    Custom wardrobes, kitchens, and furniture designed with
+                    precision and style.
+                  </p>
+                  <a
+                    href="#"
+                    class="btn btn-outline-dark btn-sm rounded-circle"
+                  >
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrows -->
+          <!-- <div class="swiper-button-prev custom-nav">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+  <div class="swiper-button-next custom-nav">
+    <i class="fa-solid fa-angle-right"></i>
+  </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- ready to transform section -->
+     <div class="position-relative transform-section">
+  <div class="container position-relative z-1 ">
+    <div class="transform-content">
+         <div class="transform-content  p-5 rounded" style="background-image: url('/images/transform-bg.png'); background-size: cover; background-position: center; height: 500px;">
+      <h2 class="fw-bold display-5 mb-3">Ready to Transform Your Space?</h2>
+      <p class="text-dark mb-4">
+        Let’s bring your vision to life—beautifully, functionally, and uniquely you. Whether it’s a single room or a full home makeover, our team is here to make it happen.
+      </p>
+      <a href="#" class="btn btn-outline-dark px-4 py-2">Get A Quote Today</a>
+    </div>
+    </div>
+   
+  </div>
+
+  <!-- Left Decorative Image -->
+  <img src="./images/transform_left.png" alt="Decor Left" class="img-fluid decor-left" style="width: 140px; border-radius: 8px;">
+
+  <!-- Right Decorative Image -->
+  <img src="./images/transform_right.png" alt="Decor Right" class="img-fluid decor-right"style="width: 140px; border-radius: 8px;">
+</div>
+<!-- testimonial section -->
+    <div class="testimonial-section container">
+    <div class="testimonial-layout"> <!-- New Flex Container -->
+
+      <div class="testimonial-header"> <!-- Fixed Left Part -->
+        <h2>What Our Clients Say</h2>
+        <p>Genuine feedback from homeowners whose spaces we've transformed with care, creativity, and a commitment to quality interior design solutions.</p>
+        <a href="#">View all →</a>
+      </div>
+
+      <div class="testimonial-slider"> <!-- Sliding Right Part -->
+        <div class="testimonial-container"> <!-- Holds all items, moves horizontally -->
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p class="quote">D Home Improvement completely exceeded our expectations. The design, attention to detail, and execution were flawless. Our home finally feels like us.</p>
+            <p class="author">– Maison Élan</p>
+          </div>
+          <div class="testimonial">
+            <div class="stars">★★★★★</div>
+            <p class="quote">From the first consultation to the final reveal, the entire team was professional, creative, and incredibly responsive. Highly recommend!</p>
+            <p class="author">– BeauCiel Interiors</p>
+          </div>
+          <div class="testimonial"> <!-- Added third testimonial -->
+            <div class="stars">★★★★☆</div>
+            <p class="quote">A fantastic experience overall. They understood our vision and brought it to life beautifully, staying within budget.</p>
+            <p class="author">– Urban Nest Designs</p>
+          </div>
+           <div class="testimonial"> <!-- Added fourth testimonial -->
+            <div class="stars">★★★★★</div>
+            <p class="quote">Truly transformed our living room. The process was smooth, and the results speak for themselves. Wonderful team!</p>
+            <p class="author">– Serene Spaces Co.</p>
+          </div>
+        </div>
+        <!-- Navigation Arrows -->
+        <button id="prev-testimonial" aria-label="Previous Testimonial">❮</button>
+        <button id="next-testimonial" aria-label="Next Testimonial">❯</button>
+      </div>
+
+    </div> <!-- End Testimonial Layout -->
+  </div>
+
+     <!-- contact part -->
+      <div class="contact-section py-5">
+  <div class="container">
+    <div class="row align-items-center rounded-4 overflow-hidden" style="background-image: url('/images/contact_bg.png'); background-size: cover; background-position: center;">
+      
+      <!-- Left Text Column -->
+      <div class="col-md-6 text-white p-5">
+        <h2 class="display-5 fw-bold">Let’s Design Your<br>Dream Space<br>Together</h2>
+        <p class="mt-3 fs-5">Speak with our design experts to explore ideas, get personalized solutions,<br>and start your journey toward a beautifully transformed home.</p>
+      </div>
+
+      <!-- Right Form Column -->
+      <div class="col-md-6 p-5">
+        <div class="bg-light p-4 rounded-3 shadow-lg" style="max-width: 400px; margin: auto;">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Full Name">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Phone">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Description"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-dark w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- clients part -->
+ <div class="clientPart py-5 text-center" style="background-color: #fefdf2;">
+  <div class="container">
+    <p class="text-muted mb-1">Trusted by Over 100+ </p>
+    <h2 class="fw-bold mb-4">Satisfied Clients</h2>
+
+    <!-- Owl Carousel -->
+    <div id="clientCarousel" class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="./images/c1.png" alt="Client 1" class="img-fluid">
+      </div>
+      <div class="item">
+        <img src="./images/c2.png" alt="Client 2" class="img-fluid ">
+      </div>
+      <div class="item">
+        <img src="./images/c3.png" alt="Client 3" class="img-fluid">
+      </div>
+      <div class="item">
+        <img src="./images/c4.png" alt="Client 4" class="img-fluid">
+      </div>
+      <div class="item">
+        <img src="./images/c5.png" alt="Client 5" class="img-fluid">
+      </div>
+      <div class="item">
+        <img src="./images/c6.png" alt="Client 6" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- footer -->
+ <footer class="bg-light-subtle text-dark pt-5 pb-3" style="background-color: #fef1e4;">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Logo & Subscription -->
+      <div class="col-md-3">
+        <img src="./images/logo.png" alt="Logo">
+        <p class="fw-semibold mt-2 mb-1">Stay Tuned For Updates</p>
+        <div class="input-group">
+          <input type="email" class="form-control" placeholder="Email">
+          <button class="btn btn-dark" type="button">
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3">
+        <p class="mb-1 fw-semibold">Phone</p>
+        <p class="mb-2 small">+01 985 456 3200</p>
+
+        <p class="mb-1 fw-semibold">Email</p>
+        <p class="mb-2 small">info@homeimprovement.com</p>
+
+        <p class="mb-1 fw-semibold">Address</p>
+        <p class="small">calle 65 de infanteria #102<br>san juan, puerto rico 00924</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2">
+        <p class="fw-semibold mb-2">Quick Links</p>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="text-dark text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">About us</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Projects</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Contact</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Blog</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Faq</a></li>
+        </ul>
+      </div>
+
+      <!-- Residential Services -->
+      <div class="col-md-2">
+        <p class="fw-semibold mb-2">Residential Services</p>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="text-dark text-decoration-none">Home Interiors</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Modular Kitchens</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Bedroom Design</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Living Spaces</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Dining Areas</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">False Ceilings</a></li>
+        </ul>
+      </div>
+
+      <!-- Commercial Services -->
+      <div class="col-md-2">
+        <p class="fw-semibold mb-2">Commercial Services</p>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="text-dark text-decoration-none">Office Interiors</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Retail Design</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Restaurant Interiors</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Café Design</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Salon Design</a></li>
+          <li><a href="#" class="text-dark text-decoration-none">Showroom Planning</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer bottom -->
+    <hr class="my-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small">
+      <div class="text-muted mb-2 mb-md-0">
+        <a href="#" class="text-decoration-none text-dark me-3">Terms & Conditions</a>
+        <a href="#" class="text-decoration-none text-dark">Privacy Policy</a>
+      </div>
+      <div>
+        <a href="#" class="text-dark me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-dark me-3"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="text-dark me-3"><i class="bi bi-x"></i></a>
+        <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+      </div>
+      <div class="text-muted mt-2 mt-md-0">
+        &copy; 2025 homeimprovement. All rights reserved
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js
+"></script>
+    <script src="/js/script.js"></script>
+    <script>
+      AOS.init({
+        disable: false,
+        startEvent: "DOMContentLoaded",
+        offset: 120,
+        delay: 0,
+        duration: 3000,
+        easing: "ease",
+        once: true,
+        mirror: false,
+        anchorPlacement: "top-bottom",
+      });
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Animate the heading
+      gsap.from(".about-heading", {
+        scrollTrigger: {
+          trigger: ".about-heading",
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power2.out",
+      });
+
+      // Animate the text
+      gsap.from(".about-text", {
+        scrollTrigger: {
+          trigger: ".about-text",
+          start: "top 85%",
+          toggleActions: "play none none reverse",
+        },
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        delay: 0.2,
+        ease: "power2.out",
+      });
+
+      // Animate the button
+      gsap.from(".btn-know-more", {
+        scrollTrigger: {
+          trigger: ".btn-know-more",
+          start: "top 90%",
+          toggleActions: "play none none reverse",
+        },
+        opacity: 0,
+        scale: 0.8,
+        duration: 0.8,
+        delay: 0.3,
+        ease: "back.out(1.7)",
+      });
+    </script>
+  </body>
+</html>

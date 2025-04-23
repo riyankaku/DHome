@@ -1,0 +1,60 @@
+/* navbar responsive */
+@media screen and (max-width: 1199px) {
+  .language-selector {
+    margin-left: 0px;
+  }
+  .nav-link {
+    margin: 0 10px;
+  }
+  /* banner part */
+  .hero-title {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: "Raleway", sans-serif;
+  }
+  .hero-description {
+    font-size: 18px;
+    color: #5c5c5c;
+    font-family: "Raleway", sans-serif;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .language-selector {
+    border: 1px solid #dee2e6;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    padding: 0;
+  }
+  .dropdown {
+    padding: 0;
+  }
+
+  .nav-link {
+    margin: 0;
+  }
+  /* banner part */
+  .hero-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: "Raleway", sans-serif;
+  }
+  .hero-description {
+    font-size: 18px;
+    color: #5c5c5c;
+    font-family: "Raleway", sans-serif;
+  }
+}
+@media screen  and (max-width: 575px) {
+    .hero-section{
+        padding: 0;
+    }
+    
+}

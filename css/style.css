@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar style starts */
+
+.navbar {
+  padding: 15px 0;
+  background-color: #fff;
+}
+.nav-link {
+  color: #333;
+  margin: 0 20px;
+  font-weight: 500;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+}
+.nav-link.active {
+  position: relative;
+}
+.nav-link.active::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #c89a74;
+  width: 20px;
+  height: 20px;
+}
+.nav-link:hover::before {
+  content: "•";
+  position: absolute;
+  left: 0px;
+  color: #c89a74;
+  width: 20px;
+  height: 20px;
+}
+.language-selector {
+  border: 1px solid #dee2e6;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 80px;
+}
+.language-dropdown {
+  min-width: 5rem;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+/* Fullscreen modal styles */
+.modal-fullscreen {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+.modal-fullscreen .modal-content {
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+}
+.search-form-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15%;
+}
+.search-input {
+  border: none;
+  border-bottom: 2px solid #333;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: transparent;
+}
+.search-input:focus {
+  box-shadow: none;
+  border-color: #333;
+  outline: none;
+}
+.search-btn {
+  margin-top: 2rem;
+  padding: 0.75rem 3rem;
+  border-radius: 30px;
+}
+.close-search {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+#languageDropdown {
+  display: none;
+}
+#language_Dropdown {
+  display: block;
+}
+
+/* navbar style ends */
+
+/* banner part */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 90px;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: "Raleway", sans-serif;
+}
+
+.hero-description {
+  font-size: 30px;
+  color: #5c5c5c;
+  font-family: "Raleway", sans-serif;
+}
+
+.quote-btn {
+  border: 1px solid #000;
+  border-radius: 12px;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.quote-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.floating-icon {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  background-color: #c89a74;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+/* banner part style end */
+/* slider part  style start*/
+.slider-container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+}
+
+.owl-carousel .item {
+  height: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0 8px;
+}
+
+/* .owl-carousel .item img {
+ max-width: 800px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+} */
+
+/* Custom Owl Carousel Styling */
+.owl-dots {
+  margin-top: 20px;
+}
+
+.owl-nav {
+  display: none;
+}
+
+/* Make carousel items have equal width */
+.owl-stage {
+  display: flex;
+}
+
+.owl-item {
+  display: flex;
+  justify-content: center;
+}
+/* slider part  style   end */
+/* about part style start */
+.about-section {
+  padding: 50px 0;
+ 
+}
+.about-heading {
+  font-size: 70px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #212529;
+  font-family: "Raleway", sans-serif;
+}
+.about-text {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+.btn-know-more {
+  border: 1px solid #212529;
+  color: #212529;
+  font-weight: 500;
+  padding: 10px 40px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.btn-know-more:hover {
+  background-color: #212529;
+  color: white;
+}
+.about-content {
+  max-width: 1200px;
+}
+
+
+/* about part style end */
+/* service part style start */
+
+
+
+
+/* service part style end */
+
+/* another try for horizentally swiper */
+/* client part */
+.clientPart .owl-stage{
+ height:100px;
+}
+/* transform section */
+.decor-left{
+    position: absolute;
+    top:20px;
+    left:10%;
+    z-index: 2;
+}
+.decor-right{
+    position: absolute;
+    bottom:-10%;
+    right:10%;
+    z-index: 2;
+}
+.transform-section{
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+.transform-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* testi monial part */
+  
+
+    /* New layout container */
+    .testimonial-layout {
+      display: flex;
+      gap: 40px; 
+      align-items: flex-start;  
+    }
+
+    .testimonial-header {
+      margin-bottom: 20px;
+      flex: 0 0 35%; 
+      max-width: 450px; 
+    }
+    .testimonial-header h2 {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .testimonial-header p {
+      color: #666;
+      
+    }
+    .testimonial-header a {
+      display: inline-block;
+      margin-top: 16px;
+      text-decoration: none;
+      color: #2e2e2e;
+      font-weight: 600;
+      border-bottom: 2px solid #2e2e2e;
+    }
+
+    /* Slider wrapper */
+    .testimonial-slider {
+      flex: 1; 
+      position: relative; 
+      overflow: hidden; 
+      min-height: 220px; 
+    }
+
+    /* Container holding ALL testimonials */
+    .testimonial-container {
+      display: flex; 
+      transition: transform 0.5s ease-in-out; 
+      
+    }
+
+    /* Individual testimonial */
+    .testimonial {
+      background-color: #fff;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      flex: 0 0 100%; 
+      box-sizing: border-box; 
+      min-width: 100%;
+    }
+    .stars {
+      color: #ffcc00;
+      margin-bottom: 12px;
+    }
+    .quote {
+     
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 16px; 
+    }
+    .quote::before {
+      content: '“';
+      font-size: 28px;
+      position: absolute;
+      left: 0;
+      top: -10px;
+      color: #ccc;
+    }
+    .author {
+      margin-top: 16px;
+      font-weight: 600;
+    }
+
+    /* Arrow Styles */
+    .testimonial-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px; 
+      box-sizing: border-box;
+      pointer-events: none; 
+    }
+
+    .testimonial-nav button {
+        background-color: rgba(255, 255, 255, 0.7);
+        border: 1px solid #eee;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        font-size: 20px;
+        color: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        pointer-events: all; 
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: background-color 0.3s ease;
+        z-index: 10; 
+    }
+
+    .testimonial-nav button:hover {
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+  
+     #prev-testimonial {
+       position: absolute;
+       left: -20px; 
+       top: 50%;
+       transform: translateY(-50%);
+     }
+
+     #next-testimonial {
+       position: absolute;
+       right: -20px; 
+       top: 50%;
+       transform: translateY(-50%);
+     }
+
+    
+    .testimonial-nav button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
