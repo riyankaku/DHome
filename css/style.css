@@ -1,182 +1,199 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* navbar style starts */
 
 .navbar {
-  padding: 15px 0;
-  background-color: #fff;
+    padding: 15px 0;
+    background-color: #fff;
 }
+
 .nav-link {
-  color: #333;
-  margin: 0 20px;
-  font-weight: 500;
-  position: relative;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
+    color: #333;
+    margin: 0 20px;
+    font-weight: 500;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
 }
+
 .nav-link.active {
-  position: relative;
+    position: relative;
 }
+
 .nav-link.active::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #c89a74;
-  width: 20px;
-  height: 20px;
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #c89a74;
+    width: 20px;
+    height: 20px;
 }
+
 .nav-link:hover::before {
-  content: "•";
-  position: absolute;
-  left: 0px;
-  color: #c89a74;
-  width: 20px;
-  height: 20px;
+    content: "•";
+    position: absolute;
+    left: 0px;
+    color: #c89a74;
+    width: 20px;
+    height: 20px;
 }
+
 .language-selector {
-  border: 1px solid #dee2e6;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 80px;
+    border: 1px solid #dee2e6;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
 }
+
 .language-dropdown {
-  min-width: 5rem;
+    min-width: 5rem;
 }
+
 .dropdown-toggle::after {
-  display: none !important;
+    display: none !important;
 }
+
 /* Fullscreen modal styles */
 .modal-fullscreen {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  max-width: none;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    max-width: none;
 }
+
 .modal-fullscreen .modal-content {
-  height: 100%;
-  border: 0;
-  border-radius: 0;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
 }
+
 .search-form-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15%;
 }
+
 .search-input {
-  border: none;
-  border-bottom: 2px solid #333;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 2rem;
-  text-align: center;
-  padding: 1rem 0;
-  background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #333;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: transparent;
 }
+
 .search-input:focus {
-  box-shadow: none;
-  border-color: #333;
-  outline: none;
+    box-shadow: none;
+    border-color: #333;
+    outline: none;
 }
+
 .search-btn {
-  margin-top: 2rem;
-  padding: 0.75rem 3rem;
-  border-radius: 30px;
+    margin-top: 2rem;
+    padding: 0.75rem 3rem;
+    border-radius: 30px;
 }
+
 .close-search {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-  border: none;
-  background: transparent;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    background: transparent;
 }
+
 #languageDropdown {
-  display: none;
+    display: none;
 }
+
 #language_Dropdown {
-  display: block;
+    display: block;
 }
 
 /* navbar style ends */
 
 /* banner part */
 .hero-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 3rem;
-  position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    position: relative;
 }
 
 .hero-title {
-  font-size: 90px;
-  font-weight: 600;
-  line-height: 1.2;
-  font-family: "Raleway", sans-serif;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 1.2;
+    font-family: "Raleway", sans-serif;
 }
 
 .hero-description {
-  font-size: 30px;
-  color: #5c5c5c;
-  font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    color: #5c5c5c;
+    font-family: "Raleway", sans-serif;
 }
 
 .quote-btn {
-  border: 1px solid #000;
-  border-radius: 12px;
-  padding: 0.5rem 1.5rem;
-  font-weight: 500;
-  margin-top: 1rem;
-  transition: all 0.2s ease-in-out;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: all 0.2s ease-in-out;
 }
 
 .quote-btn:hover {
-  background-color: #000;
-  color: #fff;
+    background-color: #000;
+    color: #fff;
 }
 
 .floating-icon {
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-  width: 48px;
-  height: 48px;
-  background-color: #c89a74;
-  color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background-color: #c89a74;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
 }
+
 /* banner part style end */
 /* slider part  style start*/
 .slider-container {
-  max-width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  border-radius: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
 }
 
 .owl-carousel .item {
-  height: 350px;
-  border-radius: 15px;
-  overflow: hidden;
-  margin: 0 8px;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 8px;
 }
 
 /* .owl-carousel .item img {
@@ -189,57 +206,63 @@
 
 /* Custom Owl Carousel Styling */
 .owl-dots {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .owl-nav {
-  display: none;
+    display: none;
 }
 
 /* Make carousel items have equal width */
 .owl-stage {
-  display: flex;
+    display: flex;
 }
 
 .owl-item {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
+
 /* slider part  style   end */
 /* about part style start */
 .about-section {
-  padding: 50px 0;
- 
+    padding: 50px 0;
+
 }
+
 .about-heading {
-  font-size: 70px;
-  font-weight: 600;
-  margin-bottom: 30px;
-  color: #212529;
-  font-family: "Raleway", sans-serif;
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #212529;
+    font-family: "Raleway", sans-serif;
 }
+
 .about-text {
-  color: #555;
-  line-height: 1.8;
-  font-size: 1rem;
-  margin-bottom: 30px;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
+    color: #555;
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
 }
+
 .btn-know-more {
-  border: 1px solid #212529;
-  color: #212529;
-  font-weight: 500;
-  padding: 10px 40px;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+    border: 1px solid #212529;
+    color: #212529;
+    font-weight: 500;
+    padding: 10px 40px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
 }
+
 .btn-know-more:hover {
-  background-color: #212529;
-  color: white;
+    background-color: #212529;
+    color: white;
 }
+
 .about-content {
-  max-width: 1200px;
+    max-width: 1200px;
 }
 
 
@@ -247,33 +270,35 @@
 /* service part style start */
 
 
-
-
 /* service part style end */
 
 /* another try for horizentally swiper */
 /* client part */
-.clientPart .owl-stage{
- height:100px;
+.clientPart .owl-stage {
+    height: 100px;
 }
+
 /* transform section */
-.decor-left{
+.decor-left {
     position: absolute;
-    top:20px;
-    left:10%;
+    top: 20px;
+    left: 10%;
     z-index: 2;
 }
-.decor-right{
+
+.decor-right {
     position: absolute;
-    bottom:-10%;
-    right:10%;
+    bottom: -10%;
+    right: 10%;
     z-index: 2;
 }
-.transform-section{
+
+.transform-section {
     padding-top: 100px;
     margin-bottom: 100px;
 }
-.transform-content{
+
+.transform-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
